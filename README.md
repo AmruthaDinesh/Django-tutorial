@@ -1,22 +1,40 @@
 # Django-tutorial
 
-Create a virtual environment say 'myproject'
+# Django installation
 
-Now, don't forget to activate it.
 
-To activate :
-Open VS code terminal (and select cmd, by default VS code terminal opens powershell)
-workon myproject     // this will activate the virtual environment myproject 
+Open Command Prompt and Type :
 
-Now type the command to install Django in the virtual environment.
+pip install virtualenvwrapper-win          #This command helps create a setup for the environment
+
+mkvirtualenv env_name                      #To make the virtual environment
+
+Activate the virtual environment and then install django using the command
 
 pip install django
 
 and django is installed succesfully.(in the virtual environment)
 
-# Now What?
+django-admin --version                   #check the version
 
-to be updated
+# Setting up the django project
+
+Create a folder 'projects' and move into that folder
+
+django-admin startproject project_name      #command to create the project
+
+cd project_name
+
+python manage.py runserver  #it helps check if the installation was succesful
+
+# Now What? Create a django app
+
+Go to cmd (Don't forget to activate the virtual environment)
+
+python manage.py startapp app_name_here        #this command helps create a django app 'app_name_here'
+
+inside the 'app_name_here' create a file urls.py
+
 
 # Day 2
 
